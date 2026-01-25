@@ -45,7 +45,7 @@ I build systems where **performance** and **reliability** are non-negotiable.
 
 ---
 <div align="left">
-  <a href="https://www.linkedin.com/in/TU_USUARIO/" target="_blank">
+  <a href="[https://www.linkedin.com/in/TU_USUARIO/](https://www.linkedin.com/in/ivan-olivera-engineer/)" target="_blank">
     <img src="https://img.shields.io/badge/Connect_on-LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
   </a>
 </div>
