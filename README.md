@@ -1,51 +1,55 @@
-### Hi there, I'm Ivan Olivera 👋
+# Hi there, I'm Ivan Olivera 👋
 
-**High-Performance Software Engineer | Low Latency & Distributed Systems**
+### High-Performance Software Engineer | Low Latency & Distributed Systems
 
-I am a Backend Engineer with 4 years of experience in critical financial systems, specializing in **High-Frequency Trading (HFT)** infrastructure, **Cloud-Native Banking** architectures, and **Zero-Allocation** system design.
+I am a Backend Engineer with 4 years of experience in critical financial systems, specializing in **High-Frequency Trading (HFT)** infrastructure, Cloud-Native Banking architectures, and **Zero-Allocation** system design.
 
-My engineering focus is on pushing the boundaries of the JVM, optimizing for **nanosecond-level latency**, and architecting secure, cost-efficient distributed platforms.
+My engineering focus is on pushing the boundaries of the JVM, optimizing for nanosecond-level latency, and architecting secure, cost-efficient distributed platforms.
 
 ---
 
-### 🚀 Engineering Highlights
+### 🚀 Engineering Highlights & Featured Projects
 
-I build systems where **performance** and **reliability** are non-negotiable.
+#### 1. [CudaQuantEngine: HFT-Grade Option Pricer](https://github.com/ivanoliveraprofesional-code/cuda-quant-engine)
+> **C++20 | CUDA 12.x | Compute-Bound Architecture**
 
-| Domain | Project | Key Metrics / Tech |
-| :--- | :--- | :--- |
-| **Low Latency / HFT** | **[Ultra-Low Latency Engine](https://github.com/ivanoliveraprofesional-code/high-performance-zero-gc-logger)** | `16.3M ops/sec` `Zero-GC` `Java 21 FFM` `Lock-Free` |
-| **Cloud Architecture** | **[FinOps Banking Platform](https://github.com/ivanoliveraprofesional-code/finops-bank-platform)** | `AWS/LocalStack` `Kubernetes` `Istio` `Zero Trust` |
-| **Quant / DeFi** | **[EVM Arbitrage Bot](https://github.com/ivanoliveraprofesional-code/defi-arbitrage-poc)** | `Python` `Web3` `Mempool Analysis` `Gas Optimization` |
+A GPU-accelerated Monte Carlo pricing engine for path-dependent derivatives. Optimized to physical hardware limits using **Philox RNG** (Stateless) and Warp-Level Primitives to eliminate Global Memory traffic.
+
+* **⚡ Throughput:** `138 Million paths/sec` on RTX 3050.
+* **⏱️ Latency:** `7.22 ms` end-to-end (1M paths, 252 steps).
+* **🧠 Key Tech:** Warp Shuffle (`__shfl_down_sync`), Constant Memory Broadcasting, Zero-Copy.
+
+#### 2. [Ultra-Low Latency HFT Trading Engine](https://github.com/ivanoliveraprofesional-code/high-performance-zero-gc-logger)
+> **Java 21 (Preview) | Project Panama | Zero-GC**
+
+A proof-of-concept HFT Data Ingestion Engine utilizing **Mechanical Sympathy**. It simulates the full lifecycle from UDP Multicast capture to Off-Heap persistence with **zero garbage collection** on the critical path.
+
+* **⚡ Throughput:** `16.3 Million msg/sec` (UDP -> RingBuffer -> Disk).
+* **⏱️ Latency:** `< 600 ns` (Network Stack + App Logic).
+* **🧠 Key Tech:** LMAX Disruptor Pattern, Kernel Bypass (Busy Spin), MemorySegments (FFM API).
+
+#### 3. [FinOps Distributed Banking Platform](https://github.com/ivanoliveraprofesional-code/finops-bank-platform)
+> **Cloud-Native | Kubernetes | Zero Trust Security**
+
+A production-grade Tier-3 banking simulation focusing on Cost Optimization (FinOps) and Security. Bridges the gap between Software Development and Platform Engineering using a hybrid DB strategy.
+
+* **☁️ Infrastructure:** AWS Emulation via **LocalStack** (S3, KMS, DynamoDB).
+* **🛡️ Security:** **Istio Service Mesh** for mTLS & JWT Validation.
+* **🧠 Key Tech:** Hexagonal Architecture, Terraform (IaC), GitOps.
 
 ---
 
 ### 🛠 Technology Stack
 
-**Core Engineering:**
-![Java](https://img.shields.io/badge/Java-21_(FFM)-ED8B00?style=flat&logo=openjdk&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=flat&logo=python&logoColor=white)
-![Spring](https://img.shields.io/badge/Spring_Boot-6DB33F?style=flat&logo=spring&logoColor=white)
-![System Design](https://img.shields.io/badge/System_Design-High_Availability-blue)
-
-**Low Latency & Concurrency:**
-`Project Panama` `LMAX Disruptor Pattern` `Lock-Free Algorithms` `Agrona` `JMH` `Off-Heap Memory`
-
-**Infrastructure & Cloud:**
-![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat&logo=amazon-aws&logoColor=white)
-![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=flat&logo=kubernetes&logoColor=white)
-![Terraform](https://img.shields.io/badge/Terraform-7B42BC?style=flat&logo=terraform&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)
+| Domain | Stack |
+| :--- | :--- |
+| **Low Latency & Systems** | Java 21 (Project Panama/Loom), C++20, CUDA, Rust |
+| **Concurrency & Perf** | LMAX Disruptor, Agrona, Lock-Free Algos, JMH, SIMD/AVX |
+| **Cloud & Architecture** | Kubernetes, AWS, Terraform, Istio, Kafka, LocalStack |
 
 ---
 
 ### 🔭 Current Focus
-* **Micro-optimizations:** Exploring CPU affinity and kernel bypass (Solarflare) for Linux environments.
-* **Systems Programming:** Porting critical paths to Rust for hybrid architectures.
 
----
-<div align="left">
-  <a href="https://www.linkedin.com/in/ivan-olivera-engineer/" target="_blank">
-    <img src="https://img.shields.io/badge/Connect_on-LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
-  </a>
-</div>
+* **Micro-optimizations:** Exploring CPU affinity and kernel bypass (**Solarflare**) for Linux environments.
+* **Systems Programming:** Porting critical paths to **Rust** for hybrid architectures.
