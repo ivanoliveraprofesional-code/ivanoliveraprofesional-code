@@ -14,9 +14,9 @@ I build systems where **performance** and **reliability** are non-negotiable.
 
 | Domain | Project | Key Metrics / Tech |
 | :--- | :--- | :--- |
-| **Low Latency / HFT** | **[Ultra-Low Latency Engine](https://github.com/ivanoliveraprofesional-code/performance-lab)** | `16.3M ops/sec` `Zero-GC` `Java 21 FFM` `Lock-Free` |
+| **Low Latency / HFT** | **[Ultra-Low Latency Engine](https://github.com/ivanoliveraprofesional-code/high-performance-zero-gc-logger)** | `16.3M ops/sec` `Zero-GC` `Java 21 FFM` `Lock-Free` |
 | **Cloud Architecture** | **[FinOps Banking Platform](https://github.com/ivanoliveraprofesional-code/finops-bank-platform)** | `AWS/LocalStack` `Kubernetes` `Istio` `Zero Trust` |
-| **Quant / DeFi** | **[EVM Arbitrage Bot](https://github.com/ivanoliveraprofesional-code/evm-arbitrage-bot)** | `Python` `Web3` `Mempool Analysis` `Gas Optimization` |
+| **Quant / DeFi** | **[EVM Arbitrage Bot](https://github.com/ivanoliveraprofesional-code/defi-arbitrage-poc)** | `Python` `Web3` `Mempool Analysis` `Gas Optimization` |
 
 ---
 
